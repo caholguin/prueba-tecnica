@@ -14,7 +14,6 @@ class GradeController extends Controller
         $grades = Grade::all();
         $title = 'Notas';
         return view('grade.index',compact('grades','title'));
-
     }
 
   

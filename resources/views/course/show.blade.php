@@ -31,7 +31,7 @@
 
             <div class="mb-3">
                 <label for="example-select2">Estudiantes</label>
-                <select class="form-control js-example-basic-multiple" name="students[]" multiple="multiple">
+                <select class="form-control js-example-basic-multiple" name="students[]" multiple="multiple" disabled>
                     @foreach ($students as $student)
                         <option value="{{ $student->id }}" @if ($course->students->contains($student->id)) selected @endif>
                             {{ $student->name }} {{ $student->last_name }}

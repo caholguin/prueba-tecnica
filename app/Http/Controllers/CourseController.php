@@ -13,9 +13,7 @@ class CourseController extends Controller
         $courses = Course::all();
         $title = 'Cursos';
         return view('course.index',compact('courses','title'));
-
     }
-
   
     public function create()
     {
@@ -23,11 +21,9 @@ class CourseController extends Controller
         $title = 'Crear curso';        
         return view('course.create',compact('title','students'));
     }
-
    
     public function store(Request $request)
-    {
-       
+    {       
         $request->validate([
             'name' => 'required',
             'description' => 'required',
@@ -46,9 +42,7 @@ class CourseController extends Controller
         }
 
         return redirect()->route('courses.index');
-
     }
-
    
     public function show(Course $course)
     {       
@@ -56,7 +50,6 @@ class CourseController extends Controller
         $title = 'Ver curso';
         return view('course.show',compact('course','title','students'));       
     }
-
    
     public function edit(Course $course)
     {   
@@ -64,7 +57,6 @@ class CourseController extends Controller
         $title = 'Editar curso';
         return view('course.edit',compact('course','students','title'));
     }
-
     
     public function update(Request $request, Course $course)
     {
@@ -87,13 +79,10 @@ class CourseController extends Controller
 
         return redirect()->route('courses.index');
     }
-
    
     public function destroy(Course $course)
     {
         $course->delete();
-
         return redirect()->route('courses.index');
-
     }
 }

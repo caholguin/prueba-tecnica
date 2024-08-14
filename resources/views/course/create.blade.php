@@ -4,8 +4,6 @@
 
 @section('content')
 
-
-
     <div class="card container mt-4">
         <h1>{{ $title }}</h1>
 
