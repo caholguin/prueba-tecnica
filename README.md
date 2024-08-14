@@ -4,9 +4,9 @@
 
 Asegúrate de tener instalados los siguientes requisitos en tu máquina:
 
-- PHP >= 8.0
+- PHP >= 8.2
 - Composer
-- MySQL o MariaDB
+- MySQL
 
 ## Clonar el repositorio
 
@@ -16,7 +16,7 @@ git clone https://github.com/caholguin/prueba-tecnica.git
 
 ## Instalar dependencias
 
-Accede al directorio del proyecto e instala las dependencias de PHP utilizando Composer:
+Accede al directorio del proyecto o abre el proyecto en un editor de codigo de tu preferencia e instala las dependencias de PHP utilizando Composer ejecutando el siguiente comando:
 cd prueba-tecnica
 composer install
 
@@ -40,7 +40,7 @@ DB_PASSWORD=tu_contraseña
 
 php artisan migrate
 
-## Levantar el servidor
+## Levanta el servidor
 
 php artisan serve
 
